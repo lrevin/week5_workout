@@ -1,9 +1,21 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>나의 캡스톤 소개</title><link rel="stylesheet" href="style.css"><script defer src="app.js"></script></head>
-<body><main><header><p class="eyebrow">WEEK 5 · CAPSTONE</p><h1 id="project-title">TODO: 프로젝트 이름</h1><p>누적 조회수 <strong id="view-count">불러오는 중</strong></p></header>
-<!-- TODO: AI를 활용해 디자인과 소개 내용을 완성하세요. 아래 id는 API 연결에 사용하므로 유지하세요. -->
-<section><h2>프로젝트 소개</h2><p id="project-summary">TODO: 프로젝트 목적과 해결할 문제를 소개하세요.</p></section>
-<section><h2>주요 기능</h2><div id="project-features">TODO: 주요 기능을 구체적으로 작성하세요.</div></section>
-<section><h2>사용 기술</h2><p id="project-technology">TODO: 사용 기술과 역할을 적으세요.</p></section>
-<section><h2>팀 소개</h2><p>TODO: 팀원과 역할을 작성하세요.</p></section>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Build Up 소개</title><link rel="stylesheet" href="style.css"><script defer src="app.js"></script></head>
+<body><main><header><p class="eyebrow">WEEK 5 · CAPSTONE</p><h1 id="project-title">Build Up — 건설 현장 진척 보고 앱</h1><p>누적 조회수 <strong id="view-count">불러오는 중</strong></p></header>
+<!-- 아래 id는 API 연결에 사용하므로 유지하세요. -->
+<section><h2>프로젝트 소개</h2><p id="project-summary">Build Up은 건설 현장의 작업자·현장 관리자·본사가 공정 진행률, 작업일보, 사진·첨부 문서, 자재 요청을 한 앱에서 주고받는 진척 보고 서비스입니다. 전화·메신저·엑셀로 흩어져 있던 현장 보고를 한곳에 모으고, 사진 촬영 시각과 제출 위치로 허위·지연 보고를 확인해 본사가 현장 상황을 빠르고 정확하게 파악할 수 있도록 합니다.</p></section>
+<section><h2>주요 기능</h2><div id="project-features"><ul>
+<li>역할 4가지: 작업자 / 현장 관리자 / 본사 관계자 / 시스템 관리자(웹 전용)</li>
+<li>현장 참여: 6자리 참여 코드로 참여, 공정과 가중치를 직접 설정하고 계획 대비 지연 표시</li>
+<li>진척 보고: 공정 진행률 + 사진 10장 + 첨부 문서 5개(엑셀·PDF·한글 등) + 날씨·인원·장비</li>
+<li>보고 검토: 본사(또는 현장 관리자)가 승인하거나 코멘트와 함께 보완 요청</li>
+<li>허위·지연 보고 확인: 사진 촬영 시각(EXIF)과 제출 위치(GPS)로 오래된 사진·현장 밖 제출 표시</li>
+<li>자재 요청: 요청 → 현장 관리자 또는 본사가 승인·반려</li>
+<li>본사 대시보드: 연결된 현장을 한눈에, 확인 안 한 보고·승인 대기 자재 표시</li>
+<li>작업일보 엑셀 내보내기, 휴대폰 알림(Firebase)</li>
+</ul></div></section>
+<section><h2>사용 기술</h2><p id="project-technology">안드로이드 앱: React Native · TypeScript<br>
+백엔드 API: Spring Boot · Java 17 · MySQL 8 · Spring Security + JWT · BCrypt<br>
+웹 대시보드: React · TypeScript · Recharts<br>
+인프라·도구: AWS EC2 · RDS · S3, Nginx, Firebase 알림, Swagger, JUnit, GitHub Actions</p></section>
+<section><h2>팀 소개</h2><p>경동대학교 캡스톤 디자인 3인 팀 — 앱, 서버, 웹 대시보드를 나누어 개발했습니다.</p></section>
 <button id="download-button">소개 내용 다운로드 (.md)</button><button id="refresh-views">조회수 다시 확인</button><p id="message" class="result" aria-live="polite"></p>
 <footer><a href="/api/health">API 연결 확인</a><p>페이지를 열거나 새로고침하면 조회수가 증가합니다.</p></footer></main></body></html>
